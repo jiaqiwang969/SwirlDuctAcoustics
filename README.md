@@ -1,7 +1,7 @@
 # SwirlDuctAcoustics
 - Aim: Reproduce the Green function in swirl duct using collocation method.
 - Ref: James Mathews-[GreenSwirl](https://www.jamesrmathews.co.uk/greenswirl/)-PhD thesis.
-- Reqiure: add [Chebfun](https://github.com/chebfun/chebfun) in to subpackage.
+- Reqiure: add [Chebfun](https://github.com/chebfun/chebfun) in to subpackage; tecplot for visulization.
 
 
 Results:
