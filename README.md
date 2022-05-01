@@ -1,6 +1,6 @@
 # SwirlDuctAcoustics
 - Aim: Reproduce the Green function in swirl duct using collocation method.
-- Ref: James Mathews- Mathematical modelling of noise generation in turbofan aeroengines using Green’s functions.PhD thesis.
+- Ref: James Mathews-[GreenSwirl](https://www.jamesrmathews.co.uk/greenswirl/)-PhD thesis.
 - Reqiure: add [Chebfun](https://github.com/chebfun/chebfun) in to subpackage.
 
 
