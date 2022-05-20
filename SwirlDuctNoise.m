@@ -17,20 +17,20 @@ save_directory = ['result02-swirl/','output',date];
 if ~exist(save_directory) mkdir(save_directory);else disp('file exit');end
 
 r_pole=[0.8];%Pulse point position - upstream and downstream control
-x_pole=linspace(-5,5,20);x_pole1=x_pole(find(x_pole<=0));x_pole2=x_pole(find(x_pole>0));
+x_pole=linspace(-0.5,0.5,2);x_pole1=x_pole(find(x_pole<=0));x_pole2=x_pole(find(x_pole>0));
 Entropy=0; %0:constant entropy condtion;1-2:logatithmic entropy condtion
 Boundary=[1]; Type={'Hard Wall';'Lined Outer Wall';'Lined Inner Wall';'Lined Outer&Inner Wall'};
 z_t=1-2*sqrt(-1);z_h=1-2*sqrt(-1);
 beta=[0.3];
 N =31;Ratio=0.6; [D,r] = cheb(N,Ratio,1);
 l=4;probeNumber = 64; circshiftAngle = 6;thetaNumber=probeNumber*circshiftAngle;
-w=25;Tr=0.2;Omag=0.4;Mx=0.4*ones(N+1,1);M_theta=[Tr./r(1:(N+1)/4*3);(Tr./r((N+1)/4*3)-Omag.*r((N+1)/4*3))+Omag.*r((N+1)/4*3+1:end)]; %
+w=25;Tr=0;Omag=0;Mx=0.4*ones(N+1,1);M_theta=[Tr./r(1:(N+1)/4*3);(Tr./r((N+1)/4*3)-Omag.*r((N+1)/4*3))+Omag.*r((N+1)/4*3+1:end)]; %
 %Tr=0.0;Omag=0.5; Mx=0.001*ones(N+1,1);M_theta=Tr./r+Omag*r;
 %When the spin coefficient is too large, then the effect must be calculated; Mx cannot be zero
 [c02,rou0,P0,s0]=entropyPara(r,N,Ratio,Omag,Tr,Entropy,beta);
-m=[-35:20];%52 53
+m=[-35:35];%52 53
 tic
-parfor nk=1:length(m)
+for nk=1:length(m)
 
     [V,lam]=eigfun_AB(r,D,N,w,m(nk),Ratio,Mx,M_theta,rou0,P0,c02,Boundary,z_t,z_h);%characteristics
     crLayer=[min((w-m(nk)*M_theta./r)./Mx);max((w-m(nk)*M_theta./r)./Mx)];
@@ -82,3 +82,22 @@ tic
 pltPlot_greenswirl(w,r,m,GGw,TTm1,TTm2,TTm3,GGwArray,TTm1Array,TTm2Array,TTm3Array,rou0_3D,P0_3D,s0_3D,Mx_3D,M_theta_3D,Tr,Omag,save_directory,Boundary,Type,x_pole,thetaNumber)
 toc
 %save([save_directory,'/',date,char(Type(Boundary)),'-Tr=',num2str(Tr),'-Omag=',num2str(Omag),'.mat'])
+
+
+figure;
+
+subplot(1,3,1)
+bar(m,TTGmn1(:,1))
+xlabel('Mode number')
+grid minor
+subplot(1,3,2)
+bar(m,TTGmn2(:,1))
+xlabel('Mode number')
+
+grid minor
+subplot(1,3,3)
+bar(m,TTGmn3(:,1))
+xlabel('Mode number')
+
+grid minor
+
