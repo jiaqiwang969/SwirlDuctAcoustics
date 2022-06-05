@@ -4,7 +4,13 @@
 - Reqiure: add [Chebfun](https://github.com/chebfun/chebfun) in to subpackage; tecplot for visulization.
 
 
-Results:
+### Basic Theory
+1. [duct acoustic fundamentals](https://github.com/jiaqiwang969/fundamentalsOfDuctAcoustics)
+2. [bsiac green function](https://github.com/jiaqiwang969/UniformflowGreenFun)
+3. [duct mode detect](https://github.com/jiaqiwang969/ductModeVplot)
+
+
+### Results:
 | CaseName  | Link   | Info   |
 | ---|--------|------- |
 | 01 |  [monopole.gif](https://github.com/jiaqiwang969/SwirlDuctAcoustics/tree/main/results/monopole.gif) |  |
