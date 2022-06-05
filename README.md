@@ -15,7 +15,7 @@
 | ---|--------|------- |
 | 01 |  [monopole.gif](https://github.com/jiaqiwang969/SwirlDuctAcoustics/tree/main/results/monopole.gif) |  |
 | 02 |  [dipole.gif](https://github.com/jiaqiwang969/SwirlDuctAcoustics/tree/main/results/dipole.gif) |  |
-| 03 |  [rotatingNoise.gif](https://github.com/jiaqiwang969/SwirlDuctAcoustics/tree/main/results/rotatingNoise.gif) | reverse-recordding
+| 03 |  [rotatingNoise.gif](https://github.com/jiaqiwang969/SwirlDuctAcoustics/tree/main/results/rotatingNoise.gif) | Reverse-recording
 | 04 |  [shellVibration.gif](https://github.com/jiaqiwang969/SwirlDuctAcoustics/tree/main/results/shellVibration.gif) | Zoom in the Deformation effect |
 | 05 |  [Gw.gif](https://github.com/jiaqiwang969/SwirlDuctAcoustics/tree/main/results/Gw.gif) |  |
 | 06 |  [Tw1.gif](https://github.com/jiaqiwang969/SwirlDuctAcoustics/tree/main/results/Tw1.gif) |  |
