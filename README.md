@@ -8,6 +8,7 @@
 1. [duct acoustic fundamentals](https://github.com/jiaqiwang969/fundamentalsOfDuctAcoustics)
 2. [bsiac green function](https://github.com/jiaqiwang969/UniformflowGreenFun)
 3. [duct mode detect](https://github.com/jiaqiwang969/ductModeVplot)
+4. Extend:[NonlinearDuctAcoustics](https://github.com/jiaqiwang969/NonlinearDuctAcoustics)
 
 
 ### Results:
