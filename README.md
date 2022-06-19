@@ -9,7 +9,7 @@
 2. [bsiac green function](https://github.com/jiaqiwang969/UniformflowGreenFun)
 3. [duct mode detect](https://github.com/jiaqiwang969/ductModeVplot)
 4. Extend:[NonlinearDuctAcoustics](https://github.com/jiaqiwang969/NonlinearDuctAcoustics)
-5. [Winer-Hopf](https://github.com/jiaqiwang969/Winer-Hopf)
+5. Extend:[Winer-Hopf](https://github.com/jiaqiwang969/Winer-Hopf)
 
 
 ### Results:
