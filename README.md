@@ -8,6 +8,7 @@
 3. [duct mode detect](https://github.com/jiaqiwang969/ductModeVplot)
 4. Extend:[NonlinearDuctAcoustics](https://github.com/jiaqiwang969/NonlinearDuctAcoustics)
 5. Extend:[Winer-Hopf](https://github.com/jiaqiwang969/Winer-Hopf)
+6. Extend learning: [cascade-scattering](https://github.com/baddoo/complex-cascade-scattering)
 
 
 # Swirl duct acoustic
