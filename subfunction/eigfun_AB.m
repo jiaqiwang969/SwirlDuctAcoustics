@@ -1,4 +1,4 @@
-function [finteVf,finiteLam,A,B]=eigfun_AB(r,D,N,w,m,Ratio,Mx,M_theta,rou0,P0,c02,Boundary,z_t,z_h)
+function [vf,lam,A,B]=eigfun_AB(r,D,N,w,m,Ratio,Mx,M_theta,rou0,P0,c02,Boundary,z_t,z_h)
     gama=1.4;Dr_rou0=D*rou0;Dr_Mx=D*Mx;Dr_M_theta=D*M_theta;
     
 %    set up matrices A and B  
@@ -59,10 +59,10 @@ function [finteVf,finiteLam,A,B]=eigfun_AB(r,D,N,w,m,Ratio,Mx,M_theta,rou0,P0,c0
         for kk=1:5*(N+1)
             vf{kk} = [reshape(V(:,kk),[5,N+1])];
         end
-        finiteMode= find(real(lam)>-70000&real(lam)<70000&imag(lam)>-70000&imag(lam)<70000&(real(lam).^2+imag(lam).^2)>1E-3);
-        finiteLam=lam(finiteMode);
-        for kk=1:length(finiteMode)
-            finteVf{kk}=vf{finiteMode(kk)};
-        end
+%         finiteMode= find(real(lam)>-100000&real(lam)<100000&imag(lam)>-100000&imag(lam)<100000&(real(lam).^2+imag(lam).^2)>1E-3);
+%         finiteLam=lam(finiteMode);
+%         for kk=1:length(finiteMode)
+%             finteVf{kk}=vf{finiteMode(kk)};
+%         end
 
 end
